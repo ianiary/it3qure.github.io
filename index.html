@@ -7,7 +7,44 @@
 </head>
 <body>
     <script>
-        window.location.replace("https://discord.com/users/626767339039490088");
+        // Define links
+const Links = {
+    Discord: "https://discord.com/users/626767339039490088",
+    Twitter: "https://twitter.com/it3qure",
+    GitHub: "https://github.com/it3qure",
+    npm: "https://www.npmjs.com/~it-eq",
+};
+
+// Define buttons
+const discord_button = Document.prototype.getElementById("discord_button");
+const twitter_button = Document.prototype.getElementById("twitter_button");
+const github_button = Document.prototype.getElementById("github_button");
+const npm_button = Document.prototype.getElementById("npm_button");
+
+// Handle clicks
+discord_button.onclick(() => {
+    discord_button.innerHTML = "Redirecting!"
+    window.location.replace(Links['Discord']);
+})
+
+twitter_button.onclick(() => {
+    twitter_button.innerHTML = "Redirecting!"
+    window.location.replace(Links['Twitter']);
+})
+
+github_button.onclick(() => {
+    github_button.innerHTML = "Redirecting!"
+    window.location.replace(Links['GitHub'])
+})
+
+npm_button.onclick(() => {
+    npm_button.innerHTML = "Redirecting!"
+    window.location.replace(Links['npm'])
+})
     </script>
+    <button id="discord_button">Discord</button>
+    <button id="twitter_button">Twitter/X/whatever the hell it is</button>
+    <button id="github_button">GitHub</button>
+    <button id="npm_button">npm</button>
 </body>
 </html>
